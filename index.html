@@ -3,93 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy Meals List</title>
+    <title>Healthy Meal Options</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
             margin: auto;
+            overflow: hidden;
             padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-        }
-        h2 {
-            color: #2980b9;
+        h1, h2, h3 {
+            color: #444;
         }
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
         li {
-            margin-bottom: 10px;
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #333;
         }
-        a {
-            color: #3498db;
+        li a {
             text-decoration: none;
+            color: #333;
+            font-weight: bold;
         }
-        a:hover {
-            text-decoration: underline;
+        li a:hover {
+            color: #007BFF;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Healthy Meals List</h1>
-    <h2>Breakfast Options</h2>
-    <ul>
-        <li><a href="https://www.eatingwell.com/recipe/269588/greek-yogurt-with-honey-and-walnuts/">Greek Yogurt with Berries and Nuts</a></li>
-        <li><a href="https://cookieandkate.com/best-oatmeal-recipe/">Oatmeal with Fruits and Seeds</a></li>
-        <li><a href="https://www.allrecipes.com/recipe/240408/avocado-toast-with-egg/">Avocado Toast with Eggs</a></li>
-        <li><a href="https://minimalistbaker.com/simple-acai-smoothie-bowl/">Smoothie Bowl</a></li>
-        <li><a href="https://www.downshiftology.com/recipes/chia-pudding/">Chia Pudding</a></li>
-        <!-- Add more breakfast options here -->
-    </ul>
-    <h2>Lunch Options</h2>
-    <ul>
-        <li><a href="https://www.simplyquinoa.com/mediterranean-quinoa-salad/">Quinoa Salad with Mixed Vegetables</a></li>
-        <li><a href="https://www.allrecipes.com/recipe/233603/grilled-chicken-wraps/">Grilled Chicken and Veggie Wrap</a></li>
-        <li><a href="https://www.cookingclassy.com/lentil-soup/">Lentil Soup</a></li>
-        <li><a href="https://cookieandkate.com/mediterranean-quinoa-salad-recipe/">Mediterranean Salad</a></li>
-        <li><a href="https://minimalistbaker.com/sweet-potato-chickpea-buddha-bowl/">Buddha Bowl</a></li>
-        <!-- Add more lunch options here -->
-    </ul>
-    <h2>Dinner Options</h2>
-    <ul>
-        <li><a href="https://www.allrecipes.com/recipe/228319/grilled-salmon/">Grilled Salmon with Asparagus</a></li>
-        <li><a href="https://www.eatingwell.com/recipe/277709/tofu-vegetable-stir-fry/">Stir-Fried Tofu with Vegetables</a></li>
-        <li><a href="https://www.allrecipes.com/recipe/25872/roasted-chicken-and-brussels-sprouts/">Baked Chicken with Brussels Sprouts</a></li>
-        <li><a href="https://www.cookingclassy.com/vegetable-curry/">Vegetable Curry</a></li>
-        <li><a href="https://www.simplyrecipes.com/recipes/spaghetti_squash/">Spaghetti Squash with Marinara Sauce</a></li>
-        <!-- Add more dinner options here -->
-    </ul>
-    <h2>Snack Options</h2>
-    <ul>
-        <li><a href="https://www.bonappetit.com/recipes/slideshow/fruit-dessert-recipes">Fresh Fruit</a></li>
-        <li><a href="https://www.allrecipes.com/recipe/23993/spiced-nuts/">Nuts and Seeds</a></li>
-        <li><a href="https://www.eatingwell.com/recipe/269496/classic-hummus/">Vegetable Sticks with Hummus</a></li>
-        <li><a href="https://www.simplyrecipes.com/recipes/homemade_greek_yogurt/">Greek Yogurt</a></li>
-        <li><a href="https://www.allrecipes.com/recipe/24556/cheese-crackers/">Whole-Grain Crackers with Cheese</a></li>
-        <!-- Add more snack options here -->
-    </ul>
-    <h2>Dessert Options</h2>
-    <ul>
-        <li><a href="https://www.bonappetit.com/recipes/slideshow/chocolate-desserts">Dark Chocolate</a></li>
-        <li><a href="https://www.simplyrecipes.com/recipes/fresh_fruit_salad/">Fruit Salad</a></li>
-        <li><a href="https://www.downshiftology.com/recipes/chia-pudding/">Chia Seed Pudding</a></li>
-        <li><a href="https://www.simplyrecipes.com/recipes/baked_apples/">Baked Apples with Cinnamon</a></li>
-        <li><a href="https://www.eatingwell.com/recipe/263346/frozen-yogurt/">Frozen Yogurt with Berries</a></li>
-        <!-- Add more dessert options here -->
-    </ul>
-    <h2>Beverages</h2>
-    <ul>
-        <li><a href="https://www.allrecipes.com/recipe/214667/mint-green-tea/">Green Tea</a></li>
-        <li><a href="https://www.allrecipes.com/recipe/263667/homemade-herbal-tea/">Herbal Tea</a></li>
-        <li><a href="https://www.simplyrecipes.com/recipes/green_smoothie/">Smoothies</a></li>
-        <li><a href="https://www.simplyrecipes.com/recipes/infused_water/">Infused Water</a></li>
-        <li><a href="https://www.simplyrecipes.com/recipes/homemade_kefir/">Kefir</a></li>
-        <!-- Add more beverages here -->
-    </ul>
+    <div class="container">
+        <h1>Healthy Meal Options</h1>
+        
+        <h2>Breakfast Options</h2>
+        <ul>
+            <li><a href="https://www.eatingwell.com/recipe/269588/greek-yogurt-with-honey-and-walnuts/">Greek Yogurt with Berries and Nuts</a></li>
+            <li><a href="https://cookieandkate.com/best-oatmeal-recipe/">Oatmeal with Fruits and Seeds</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/240408/avocado-toast-with-egg/">Avocado Toast with Eggs</a></li>
+            <li><a href="https://minimalistbaker.com/simple-acai-smoothie-bowl/">Smoothie Bowl</a></li>
+            <li><a href="https://www.downshiftology.com/recipes/chia-pudding/">Chia Pudding</a></li>
+            <li><a href="https://cookieandkate.com/whole-wheat-pancakes-recipe/">Whole-Grain Pancakes with Fresh Fruit</a></li>
+            <li><a href="https://www.foodnetwork.com/recipes/food-network-kitchen/scrambled-eggs-with-tomatoes-and-spinach-recipe-2042111">Scrambled Eggs with Spinach and Tomatoes</a></li>
+            <li><a href="https://www.food.com/recipe/pineapple-cottage-cheese-salad-111536">Cottage Cheese with Pineapple</a></li>
+            <li><a href="https://www.simplyquinoa.com/how-to-make-almond-milk/">Whole-Grain Cereal with Almond Milk</a></li>
+            <li><a href="https://www.cookingclassy.com/honey-lime-rainbow-fruit-salad/">Fruit Salad with Mint</a></li>
+            <li><a href="https://www.bonappetit.com/recipe/quinoa-porridge">Quinoa Porridge with Almond Butter and Bananas</a></li>
+            <li><a href="https://cookieandkate.com/vegetarian-breakfast-burritos-recipe/">Breakfast Burrito with Black Beans, Eggs, and Salsa</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/277553/smoked-salmon-cream-cheese-capers-on-toast/">Smoked Salmon and Cream Cheese on Whole-Grain Toast</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/215589/dairy-free-smoothie/">Fresh Fruit Smoothie</a></li>
+            <li><a href="https://www.cookingclassy.com/overnight-oats/">Overnight Oats with Flax Seeds and Berries</a></li>
+            <li><a href="https://minimalistbaker.com/southwest-tofu-scramble/">Tofu Scramble with Veggies</a></li>
+            <li><a href="https://cookieandkate.com/breakfast-parfait-recipe/">Greek Yogurt Parfait with Granola</a></li>
+            <li><a href="https://cookieandkate.com/whole-wheat-waffles-recipe/">Whole-Wheat Waffles with Blueberries</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_poached_eggs/">Poached Eggs on Whole-Grain Toast with a Side of Fruit</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/266317/apple-peanut-butter-snack/">Apple Slices with Peanut Butter</a></li>
+            <li><a href="https://www.bonappetit.com/recipe/buckwheat-crepes-with-smoked-salmon-and-capers">Buckwheat Crepes with Smoked Salmon and Avocado</a></li>
+        </ul>
+
+        <h2>Lunch Options</h2>
+        <ul>
+            <li><a href="https://www.simplyquinoa.com/mediterranean-quinoa-salad/">Quinoa Salad with Mixed Vegetables</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/233603/grilled-chicken-wraps/">Grilled Chicken and Veggie Wrap</a></li>
+            <li><a href="https://www.cookingclassy.com/lentil-soup/">Lentil Soup</a></li>
+            <li><a href="https://cookieandkate.com/mediterranean-quinoa-salad-recipe/">Mediterranean Salad</a></li>
+            <li><a href="https://minimalistbaker.com/sweet-potato-chickpea-buddha-bowl/">Buddha Bowl</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/21712/monterey-turkey-sandwich/">Turkey and Avocado Sandwich on Whole-Grain Bread</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/276846/chickpea-vegetable-stew/">Chickpea and Vegetable Stew</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/14172/spinach-and-strawberry-salad/">Spinach and Strawberry Salad with Balsamic Dressing</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/13933/black-bean-and-corn-salad-ii/">Black Bean and Corn Salad</a></li>
+            <li><a href="https://cookieandkate.com/classic-minestrone-soup-recipe/">Veggie-Packed Minestrone Soup</a></li>
+            <li><a href="https://www.foodnetwork.com/recipes/food-network-kitchen/chicken-and-vegetable-stir-fry-recipe-1952302">Chicken and Vegetable Stir-Fry</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/269477/greek-salad-with-tuna/">Tuna Salad with Mixed Greens</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/267939/black-bean-sweet-potato-rice-bowls/">Sweet Potato and Black Bean Burrito Bowl</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/237354/hummus-and-veggie-wrap/">Hummus and Vegetable Wrap</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/221294/roasted-beet-salad-with-goat-cheese/">Roasted Beet and Goat Cheese Salad</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/278567/farro-arugula-salad/">Farro Salad with Arugula and Cherry Tomatoes</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/greek_salad/">Greek Salad with Olives and Feta</a></li>
+            <li><a href="https://www.tasteofhome.com/recipes/grilled-chicken-caesar-wraps/">Chicken Caesar Wrap with Whole-Grain Tortilla</a></li>
+            <li><a href="https://cookieandkate.com/roasted-vegetable-quinoa-bowls/">Roasted Vegetable and Quinoa Bowl</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/277103/green-salad-with-shrimp/">Mixed Green Salad with Grilled Shrimp</a></li>
+        </ul>
+
+        <h2>Dinner Options</h2>
+        <ul>
+            <li><a href="https://www.allrecipes.com/recipe/228319/grilled-salmon/">Grilled Salmon with Asparagus</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/277709/tofu-vegetable-stir-fry/">Stir-Fried Tofu with Vegetables</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/25872/roasted-chicken-and-brussels-sprouts/">Baked Chicken with Brussels Sprouts</a></li>
+            <li><a href="https://www.cookingclassy.com/vegetable-curry/">Vegetable Curry</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/spaghetti_squash/">Spaghetti Squash with Marinara Sauce</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/277771/baked-cod-with-oregano/">Baked Cod with Quinoa and Steamed Broccoli</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/276432/zucchini-noodles-turkey-meatballs/">Turkey Meatballs with Zucchini Noodles</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/275887/turkey-stuffed-bell-peppers/">Stuffed Bell Peppers with Ground Turkey and Quinoa</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/222279/grilled-portobello-mushrooms/">Grilled Portobello Mushrooms with a Side of Brown Rice</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/277730/shrimp-vegetable-stir-fry/">Shrimp and Vegetable Stir-Fry</a></li>
+            <li><a href="https://www.bonappetit.com/recipe/lentil-shepherds-pie">Lentil and Vegetable Shepherd’s Pie</a></li>
+            <li><a href="https://cookieandkate.com/baked-eggplant-parmesan-recipe/">Baked Eggplant Parmesan</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/grilled_chicken_kebabs/">Chicken and Vegetable Kebabs</a></li>
+            <li><a href="https://minimalistbaker.com/quick-and-easy-cauliflower-rice-stir-fry/">Cauliflower Rice Stir-Fry with Tofu</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/270495/whole-wheat-pasta-with-pesto/">Whole-Wheat Pasta with Pesto and Cherry Tomatoes</a></li>
+            <li><a href="https://cookieandkate.com/moroccan-vegetable-chickpea-stew/">Moroccan Chickpea Stew</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/268848/salmon-cakes/">Salmon and Sweet Potato Cakes</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/ratatouille/">Ratatouille with a Side of Brown Rice</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/grilled_chicken_with_roasted_root_vegetables/">Grilled Chicken with a Side of Roasted Root Vegetables</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/thai_chicken_curry/">Thai Chicken and Vegetable Curry</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/273008/lemon-garlic-tilapia/">Baked Tilapia with Lemon and Dill</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/269784/beef-broccoli-cauliflower-rice/">Beef and Broccoli Stir-Fry with Cauliflower Rice</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/269765/stuffed-portobello-mushrooms/">Stuffed Portobello Mushrooms with Spinach and Goat Cheese</a></li>
+            <li><a href="https://www.cookinglight.com/recipes/healthy-eggplant-parmesan">Eggplant Parmesan with Whole Wheat Pasta</a></li>
+            <li><a href="https://cookieandkate.com/sweet-potato-black-bean-tacos/">Sweet Potato and Black Bean Tacos</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/277739/brown-rice-mushroom-risotto/">Mushroom Risotto with Brown Rice</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/268075/vegetable-paella/">Vegetable Paella with Artichokes and Peas</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/266162/slow-cooker-chickpea-curry/">Coconut Curry with Chickpeas and Spinach</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/273005/roasted-beet-goat-cheese-salad/">Roasted Beet and Goat Cheese Salad</a></li>
+            <li><a href="https://cookieandkate.com/roasted-acorn-squash-recipe/">Stuffed Acorn Squash with Quinoa and Cranberries</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/seared_tuna_with_mango_salsa/">Seared Tuna with Mango Salsa and Brown Rice</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/270495/whole-wheat-pasta-with-pesto/">Broccoli and Cheddar Stuffed Chicken</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/276766/vegetable-tempeh-stir-fry/">Vegetable and Tempeh Stir-Fry</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/276763/miso-soup/">Miso Soup with Tofu and Seaweed</a></li>
+            <li><a href="https://cookieandkate.com/roasted-cauliflower-and-lentil-tacos/">Roasted Cauliflower Tacos with Avocado</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/spaghetti_squash_with_turkey_meatballs/">Spaghetti Squash with Turkey Meatballs</a></li>
+            <li><a href="https://cookieandkate.com/vegan-quinoa-beet-burgers/">Quinoa and Black Bean Burgers</a></li>
+        </ul>
+
+        <h2>Snack Options</h2>
+        <ul>
+            <li><a href="https://www.bonappetit.com/recipes/slideshow/fruit-dessert-recipes">Fresh Fruit</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/23993/spiced-nuts/">Nuts and Seeds</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/269496/classic-hummus/">Vegetable Sticks with Hummus</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/homemade_greek_yogurt/">Greek Yogurt</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/24556/cheese-crackers/">Whole-Grain Crackers with Cheese</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/266317/apple-peanut-butter-snack/">Apple Slices with Almond Butter</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_edamame/">Edamame</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/263147/spiced-cottage-cheese/">Cottage Cheese with a Sprinkle of Cinnamon</a></li>
+            <li><a href="https://www.bonappetit.com/recipes/slideshow/chocolate-desserts">Dark Chocolate (in moderation)</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/264339/guacamole/">Sliced Bell Peppers with Guacamole</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/274486/avocado-rice-cakes/">Rice Cakes with Avocado</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/mixed_berry_smoothie/">Mixed Berry Smoothie</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/250882/peanut-butter-banana-celery-sticks/">Celery Sticks with Peanut Butter</a></li>
+            <li><a href="https://www.bonappetit.com/recipes/slideshow/dried-fruit-desserts">Dried Fruit (in moderation)</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_perfect_hard_boiled_eggs/">Hard-Boiled Eggs</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/tzatziki/">Cucumber Slices with Tzatziki</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_roast_pumpkin_seeds/">Pumpkin Seeds</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/seaweed_snacks/">Seaweed Snacks</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/fresh_fruit_salad/">Fresh Fruit Salad</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/homemade_greek_yogurt/">Greek Yogurt with a Drizzle of Honey</a></li>
+        </ul>
+
+        <h2>Dessert Options</h2>
+        <ul>
+            <li><a href="https://www.bonappetit.com/recipes/slideshow/chocolate-desserts">Dark Chocolate</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/fresh_fruit_salad/">Fruit Salad</a></li>
+            <li><a href="https://www.downshiftology.com/recipes/chia-pudding/">Chia Seed Pudding</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/baked_apples/">Baked Apples with Cinnamon</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/263346/frozen-yogurt/">Frozen Yogurt with Berries</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/banana_ice_cream/">Banana Ice Cream (blended frozen bananas)</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/266319/almond-butter-banana-snack/">Almond Butter and Banana Bites</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/coconut_panna_cotta/">Coconut Milk Panna Cotta</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/homemade_whipped_cream/">Fresh Berries with a Dollop of Whipped Cream</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/oatmeal_raisin_cookies/">Oatmeal Cookies with Raisins</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/275494/homemade-granola-bars/">Homemade Granola Bars</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/250882/peanut-butter-banana-celery-sticks/">Apple and Peanut Butter Nachos</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/263251/mango-sorbet/">Mango Sorbet</a></li>
+            <li><a href="https://www.eatingwell.com/recipe/250881/peanut-butter-banana-celery-sticks/">Berry Parfait with Greek Yogurt</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/roasted_pears_with_caramel_sauce/">Roasted Pears with a Sprinkle of Nuts</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/chocolate_dipped_strawberries/">Chocolate-Dipped Strawberries</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/pumpkin_pie/">Pumpkin Pie with a Whole-Grain Crust</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/baked_peaches/">Baked Peaches with Honey</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/fruit_yogurt_popsicles/">Yogurt and Fruit Popsicles</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/avocado_chocolate_mousse/">Avocado Chocolate Mousse</a></li>
+        </ul>
+
+        <h2>Beverages</h2>
+        <ul>
+            <li><a href="https://www.allrecipes.com/recipe/214667/mint-green-tea/">Green Tea</a></li>
+            <li><a href="https://www.allrecipes.com/recipe/263667/homemade-herbal-tea/">Herbal Tea</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/green_smoothie/">Smoothies</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/infused_water/">Infused Water</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/homemade_kefir/">Kefir</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/fresh_orange_juice/">Freshly Squeezed Orange Juice</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/lemon_water/">Lemon Water</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_coconut_water/">Coconut Water</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_kombucha_tea/">Kombucha</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_almond_milk/">Almond Milk</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/beet_juice/">Beetroot Juice</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_fresh_ginger_tea/">Ginger Tea</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/vegetable_juice/">Vegetable Juice (Carrot, Beet, Cucumber)</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_chamomile_tea/">Chamomile Tea</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_matcha_latte/">Matcha Latte with Almond Milk</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_pomegranate_juice/">Pomegranate Juice</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/turmeric_latte/">Turmeric Latte</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/iced_green_tea/">Iced Green Tea</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_watermelon_juice/">Watermelon Juice</a></li>
+            <li><a href="https://www.simplyrecipes.com/recipes/how_to_make_iced_tea/">Herbal Iced Tea (Peppermint, Hibiscus)</a></li>
+        </ul>
+    </div>
 </body>
 </html>
